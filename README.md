@@ -1,55 +1,57 @@
-# Layro Free UI
+# Liro Free UI
 
 Production-ready React and Tailwind UI components for AI applications, dashboards, SaaS products, and modern web applications.
 
-[![Layro](https://img.shields.io/badge/Layro-UI%20Components-11BF58)](https://layropro.com)
+[![Liro](https://img.shields.io/badge/Liro-UI%20Components-11BF58)](https://liro.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![React](https://img.shields.io/badge/React-18%20%7C%2019-61DAFB)](https://react.dev)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-v4-38BDF8)](https://tailwindcss.com)
 
-## What is Layro?
+## What is Liro?
 
-Layro is a React and Tailwind UI library built for developers creating modern products with AI coding tools.
+Liro was called Layro until November 2026. The old address `layropro.com` keeps working.
 
-Instead of starting every product screen from scratch, Layro provides production-ready components designed around real product workflows, states, accessibility, and responsive behavior.
+Liro is a React and Tailwind UI library built for developers creating modern products with AI coding tools.
+
+Instead of starting every product screen from scratch, Liro provides production-ready components designed around real product workflows, states, accessibility, and responsive behavior.
 
 Explore the full library:
 
-https://layropro.com/components
+https://liro.dev/components
 
 ## Free components
 
-This repository contains 15 free Layro components. Each one is a single file you can copy into your project.
+This repository contains 15 free Liro components. Each one is a single file you can copy into your project.
 
 ### AI UI
 
 | Component | What it does | Source | Live demo |
 |---|---|---|---|
-| AI Chat | A complete chat window: welcome screen, streaming answers, thinking state, actions and input | [`ai-chat.tsx`](components/ai-chat.tsx) | [Demo](https://layropro.com/components/ai-chat) |
-| Chat Message | User and assistant messages with sources, attachments and error states | [`chat-message.tsx`](components/chat-message.tsx) | [Demo](https://layropro.com/components/chat-message) |
-| Streaming Response | Markdown that renders cleanly while tokens are still arriving | [`streaming-response.tsx`](components/streaming-response.tsx) | [Demo](https://layropro.com/components/streaming-response) |
-| Thinking State | What the model is doing before the first word, with steps and elapsed time | [`thinking-state.tsx`](components/thinking-state.tsx) | [Demo](https://layropro.com/components/thinking-state) |
-| Message Actions | Copy, regenerate, feedback and answer versions under a reply | [`message-actions.tsx`](components/message-actions.tsx) | [Demo](https://layropro.com/components/message-actions) |
-| Prompt Input | Auto-growing prompt box with send, stop and tool buttons | [`prompt-input.tsx`](components/prompt-input.tsx) | [Demo](https://layropro.com/components/prompt-input) |
+| AI Chat | A complete chat window: welcome screen, streaming answers, thinking state, actions and input | [`ai-chat.tsx`](components/ai-chat.tsx) | [Demo](https://liro.dev/components/ai-chat) |
+| Chat Message | User and assistant messages with sources, attachments and error states | [`chat-message.tsx`](components/chat-message.tsx) | [Demo](https://liro.dev/components/chat-message) |
+| Streaming Response | Markdown that renders cleanly while tokens are still arriving | [`streaming-response.tsx`](components/streaming-response.tsx) | [Demo](https://liro.dev/components/streaming-response) |
+| Thinking State | What the model is doing before the first word, with steps and elapsed time | [`thinking-state.tsx`](components/thinking-state.tsx) | [Demo](https://liro.dev/components/thinking-state) |
+| Message Actions | Copy, regenerate, feedback and answer versions under a reply | [`message-actions.tsx`](components/message-actions.tsx) | [Demo](https://liro.dev/components/message-actions) |
+| Prompt Input | Auto-growing prompt box with send, stop and tool buttons | [`prompt-input.tsx`](components/prompt-input.tsx) | [Demo](https://liro.dev/components/prompt-input) |
 
 ### Dashboard & SaaS UI
 
 | Component | What it does | Source | Live demo |
 |---|---|---|---|
-| Data Table | TanStack Table with sorting, filtering, selection, column visibility and pagination | [`data-table.tsx`](components/data-table.tsx) | [Demo](https://layropro.com/components/data-table) |
-| Charts | Recharts area, bar, donut, sparkline and KPI cards with an accessible data fallback | [`chart.tsx`](components/chart.tsx) | [Demo](https://layropro.com/components/chart) |
-| Members Table | Team members with roles, filters, bulk actions and a preview of what they change | [`members-table.tsx`](components/members-table.tsx) | [Demo](https://layropro.com/components/members-table) |
-| Plan Picker | Change plan with the exact charge shown before you confirm | [`plan-picker.tsx`](components/plan-picker.tsx) | [Demo](https://layropro.com/components/plan-picker) |
+| Data Table | TanStack Table with sorting, filtering, selection, column visibility and pagination | [`data-table.tsx`](components/data-table.tsx) | [Demo](https://liro.dev/components/data-table) |
+| Charts | Recharts area, bar, donut, sparkline and KPI cards with an accessible data fallback | [`chart.tsx`](components/chart.tsx) | [Demo](https://liro.dev/components/chart) |
+| Members Table | Team members with roles, filters, bulk actions and a preview of what they change | [`members-table.tsx`](components/members-table.tsx) | [Demo](https://liro.dev/components/members-table) |
+| Plan Picker | Change plan with the exact charge shown before you confirm | [`plan-picker.tsx`](components/plan-picker.tsx) | [Demo](https://liro.dev/components/plan-picker) |
 
 ### Essential UI
 
 | Component | What it does | Source | Live demo |
 |---|---|---|---|
-| File Upload | Drag and drop, paste, progress with time left, retry, URL import and previews | [`file-upload.tsx`](components/file-upload.tsx) | [Demo](https://layropro.com/components/file-upload) |
-| Button | Variants, sizes, loading state and icon buttons | [`button.tsx`](components/button.tsx) | [Demo](https://layropro.com/components/button) |
-| Command Menu | A ⌘K command palette built on cmdk | [`command.tsx`](components/command.tsx) | [Demo](https://layropro.com/components/command) |
-| Dialog | Accessible dialogs plus a confirm dialog with type-to-confirm | [`dialog.tsx`](components/dialog.tsx) | [Demo](https://layropro.com/components/dialog) |
-| Auth Forms | Sign in, sign up, forgot password and one-time code forms | [`auth.tsx`](components/auth.tsx) | [Demo](https://layropro.com/components/auth) |
+| File Upload | Drag and drop, paste, progress with time left, retry, URL import and previews | [`file-upload.tsx`](components/file-upload.tsx) | [Demo](https://liro.dev/components/file-upload) |
+| Button | Variants, sizes, loading state and icon buttons | [`button.tsx`](components/button.tsx) | [Demo](https://liro.dev/components/button) |
+| Command Menu | A ⌘K command palette built on cmdk | [`command.tsx`](components/command.tsx) | [Demo](https://liro.dev/components/command) |
+| Dialog | Accessible dialogs plus a confirm dialog with type-to-confirm | [`dialog.tsx`](components/dialog.tsx) | [Demo](https://liro.dev/components/dialog) |
+| Auth Forms | Sign in, sign up, forgot password and one-time code forms | [`auth.tsx`](components/auth.tsx) | [Demo](https://liro.dev/components/auth) |
 
 ## Getting started
 
@@ -58,10 +60,10 @@ This repository contains 15 free Layro components. Each one is a single file you
 If your project already uses [shadcn/ui](https://ui.shadcn.com), add any component by URL:
 
 ```bash
-npx shadcn@latest add https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/ai-chat.json
+npx shadcn@latest add https://raw.githubusercontent.com/Liropro/liro-free-ui/main/r/ai-chat.json
 ```
 
-Swap `ai-chat` for any file name in the tables above (`button`, `data-table`, `chart`, `file-upload` and so on). The CLI installs the npm packages, adds the success, warning and info colours and the animations to your global CSS, and copies the file into `components/layro/` along with any Layro components it uses. That folder keeps them apart from your shadcn/ui `components/ui/button.tsx`, so nothing gets overwritten.
+Swap `ai-chat` for any file name in the tables above (`button`, `data-table`, `chart`, `file-upload` and so on). The CLI installs the npm packages, adds the success, warning and info colours and the animations to your global CSS, and copies the file into `components/layro/` along with any Liro components it uses. That folder keeps them apart from your shadcn/ui `components/ui/button.tsx`, so nothing gets overwritten.
 
 ### Or copy the files
 
@@ -127,9 +129,9 @@ export default function Page() {
 }
 ```
 
-## Why Layro?
+## Why Liro?
 
-Layro components are designed around real product requirements rather than isolated visual examples.
+Liro components are designed around real product requirements rather than isolated visual examples.
 
 Components include practical states and interactions such as:
 
@@ -145,7 +147,7 @@ The goal is simple: help developers move from an idea to a working product faste
 
 ## React + Tailwind
 
-Layro is built for modern React applications and uses Tailwind CSS for styling.
+Liro is built for modern React applications and uses Tailwind CSS for styling.
 
 The components are designed to work well in:
 
@@ -159,34 +161,34 @@ The components are designed to work well in:
 
 ## Explore more
 
-**Layro UI Components**  
-https://layropro.com/components
+**Liro UI Components**  
+https://liro.dev/components
 
 **AI UI Components**  
-https://layropro.com/ai-ui-components
+https://liro.dev/ai-ui-components
 
 **React Dashboard Components**  
-https://layropro.com/react-dashboard-ui
+https://liro.dev/react-dashboard-ui
 
 **React & Next.js Templates**  
-https://layropro.com/templates
+https://liro.dev/templates
 
 **Documentation**  
-https://layropro.com/docs
+https://liro.dev/docs
 
-**Layro**  
-https://layropro.com
+**Liro**  
+https://liro.dev
 
 ## About this repository
 
-This repository contains the free portion of the Layro UI library.
+This repository contains the free portion of the Liro UI library.
 
-The full Layro library includes additional production-ready components, collections, and complete React & Next.js templates.
+The full Liro library includes additional production-ready components, collections, and complete React & Next.js templates.
 
-Visit https://layropro.com to explore the complete library.
+Visit https://liro.dev to explore the complete library.
 
 The `r/` folder is the shadcn registry, generated from `registry.json`. After changing a component, rebuild it with `npx shadcn@latest build -o r`.
 
 ---
 
-Built by [Layro](https://layropro.com).
+Built by [Liro](https://liro.dev).
