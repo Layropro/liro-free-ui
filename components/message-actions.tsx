@@ -48,7 +48,7 @@ function cn(...inputs: ClassValue[]) {
 /* ==========================================================================
    Lightweight local tooltip
 
-   Keeps MessageActions standalone without exposing Layro's private tooltip
+   Keeps MessageActions standalone without exposing Liro's private tooltip
    implementation.
    ========================================================================== */
 
@@ -145,7 +145,7 @@ const DEFAULT_REASONS = [
   "Out of date",
 ];
 
-/* Layro's ghost IconButton, one step smaller and quieter than in a toolbar. */
+/* Liro's ghost IconButton, one step smaller and quieter than in a toolbar. */
 const ACTION =
   "size-7 rounded-[8px] text-muted-foreground hover:text-foreground disabled:opacity-40 aria-pressed:text-foreground [&_svg]:size-3.5";
 

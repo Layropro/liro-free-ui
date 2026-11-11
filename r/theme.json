@@ -1,23 +1,26 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "theme",
-  "title": "Layro Free theme",
-  "description": "Success, warning and info colours, two shadows, and the enter/exit and AI animations the components use. Works on top of any shadcn/ui theme.",
+  "title": "Liro Free theme",
+  "description": "Success, warning and info colours, soft red and amber tints, two shadows, and the enter/exit and AI animations the components use. Works on top of any shadcn/ui theme.",
+  "registryDependencies": [],
   "cssVars": {
     "theme": {
       "shadow-float": "0 1px 2px oklch(0 0 0 / 0.06), 0 8px 24px oklch(0 0 0 / 0.1)",
       "shadow-overlay": "0 2px 6px oklch(0 0 0 / 0.08), 0 24px 64px oklch(0 0 0 / 0.18)",
       "ease-out-soft": "cubic-bezier(0.22, 1, 0.36, 1)",
-      "animate-fade-in": "layro-fade-in 180ms var(--ease-out-soft)",
-      "animate-fade-out": "layro-fade-out 120ms ease-in",
-      "animate-pop-in": "layro-pop-in 160ms var(--ease-out-soft)",
-      "animate-pop-out": "layro-pop-out 110ms ease-in",
-      "animate-dialog-in": "layro-dialog-in 220ms var(--ease-out-soft)",
-      "animate-dialog-out": "layro-dialog-out 140ms ease-in",
-      "animate-shimmer": "layro-shimmer 2.2s linear infinite",
-      "animate-caret": "layro-caret 1.05s steps(1, end) infinite",
-      "animate-word-in": "layro-word-in 380ms var(--ease-out-soft) both",
-      "animate-dot": "layro-dot 1.25s ease-in-out infinite"
+      "animate-fade-in": "liro-fade-in 180ms var(--ease-out-soft)",
+      "animate-fade-out": "liro-fade-out 120ms ease-in",
+      "animate-pop-in": "liro-pop-in 160ms var(--ease-out-soft)",
+      "animate-pop-out": "liro-pop-out 110ms ease-in",
+      "animate-dialog-in": "liro-dialog-in 220ms var(--ease-out-soft)",
+      "animate-dialog-out": "liro-dialog-out 140ms ease-in",
+      "animate-shimmer": "liro-shimmer 2.2s linear infinite",
+      "animate-caret": "liro-caret 1.05s steps(1, end) infinite",
+      "animate-word-in": "liro-word-in 380ms var(--ease-out-soft) both",
+      "animate-dot": "liro-dot 1.25s ease-in-out infinite",
+      "color-destructive-soft": "var(--destructive-soft)",
+      "color-warning-soft": "var(--warning-soft)"
     },
     "light": {
       "success": "oklch(0.508 0.118 165.612)",
@@ -26,7 +29,9 @@
       "warning-fill": "oklch(0.769 0.188 70.08)",
       "warning-foreground": "oklch(0.205 0 0)",
       "info": "oklch(0.546 0.245 262.881)",
-      "info-foreground": "oklch(0.985 0 0)"
+      "info-foreground": "oklch(0.985 0 0)",
+      "destructive-soft": "color-mix(in oklab, var(--destructive) 10%, var(--card))",
+      "warning-soft": "color-mix(in oklab, var(--warning) 12%, var(--card))"
     },
     "dark": {
       "success": "oklch(0.765 0.177 163.223)",
@@ -35,45 +40,47 @@
       "warning-fill": "oklch(0.769 0.188 70.08)",
       "warning-foreground": "oklch(0.205 0 0)",
       "info": "oklch(0.707 0.165 254.624)",
-      "info-foreground": "oklch(0.205 0 0)"
+      "info-foreground": "oklch(0.205 0 0)",
+      "destructive-soft": "color-mix(in oklab, var(--destructive) 16%, var(--card))",
+      "warning-soft": "color-mix(in oklab, var(--warning) 14%, var(--card))"
     }
   },
   "css": {
-    "@keyframes layro-fade-in": {
+    "@keyframes liro-fade-in": {
       "from": {
         "opacity": "0"
       }
     },
-    "@keyframes layro-fade-out": {
+    "@keyframes liro-fade-out": {
       "to": {
         "opacity": "0"
       }
     },
-    "@keyframes layro-pop-in": {
+    "@keyframes liro-pop-in": {
       "from": {
         "opacity": "0",
         "transform": "scale(0.96) translateY(var(--pop-y, -4px))"
       }
     },
-    "@keyframes layro-pop-out": {
+    "@keyframes liro-pop-out": {
       "to": {
         "opacity": "0",
         "transform": "scale(0.97)"
       }
     },
-    "@keyframes layro-dialog-in": {
+    "@keyframes liro-dialog-in": {
       "from": {
         "opacity": "0",
         "transform": "translateY(8px) scale(0.97)"
       }
     },
-    "@keyframes layro-dialog-out": {
+    "@keyframes liro-dialog-out": {
       "to": {
         "opacity": "0",
         "transform": "translateY(4px) scale(0.98)"
       }
     },
-    "@keyframes layro-shimmer": {
+    "@keyframes liro-shimmer": {
       "from": {
         "background-position": "200% 0"
       },
@@ -81,18 +88,18 @@
         "background-position": "-200% 0"
       }
     },
-    "@keyframes layro-caret": {
+    "@keyframes liro-caret": {
       "50%": {
         "opacity": "0"
       }
     },
-    "@keyframes layro-word-in": {
+    "@keyframes liro-word-in": {
       "from": {
         "opacity": "0",
         "filter": "blur(3px)"
       }
     },
-    "@keyframes layro-dot": {
+    "@keyframes liro-dot": {
       "0%, 60%, 100%": {
         "transform": "translateY(0)",
         "opacity": "0.35"

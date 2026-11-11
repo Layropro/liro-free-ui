@@ -33,6 +33,7 @@ This repository contains 15 free Liro components. Each one is a single file you 
 | Thinking State | What the model is doing before the first word, with steps and elapsed time | [`thinking-state.tsx`](components/thinking-state.tsx) | [Demo](https://liro.dev/components/thinking-state) |
 | Message Actions | Copy, regenerate, feedback and answer versions under a reply | [`message-actions.tsx`](components/message-actions.tsx) | [Demo](https://liro.dev/components/message-actions) |
 | Prompt Input | Auto-growing prompt box with send, stop and tool buttons | [`prompt-input.tsx`](components/prompt-input.tsx) | [Demo](https://liro.dev/components/prompt-input) |
+| Code Block | Highlighted code with a file header, copy, tabs, and long blocks that fold | [`code-block.tsx`](components/code-block.tsx) | [Demo](https://liro.dev/components/code-block) |
 
 ### Dashboard & SaaS UI
 
@@ -40,8 +41,7 @@ This repository contains 15 free Liro components. Each one is a single file you 
 |---|---|---|---|
 | Data Table | TanStack Table with sorting, filtering, selection, column visibility and pagination | [`data-table.tsx`](components/data-table.tsx) | [Demo](https://liro.dev/components/data-table) |
 | Charts | Recharts area, bar, donut, sparkline and KPI cards with an accessible data fallback | [`chart.tsx`](components/chart.tsx) | [Demo](https://liro.dev/components/chart) |
-| Members Table | Team members with roles, filters, bulk actions and a preview of what they change | [`members-table.tsx`](components/members-table.tsx) | [Demo](https://liro.dev/components/members-table) |
-| Plan Picker | Change plan with the exact charge shown before you confirm | [`plan-picker.tsx`](components/plan-picker.tsx) | [Demo](https://liro.dev/components/plan-picker) |
+| Usage Meter | Usage projected from today's run rate, with the day you cross and what it costs | [`usage-meter.tsx`](components/usage-meter.tsx) | [Demo](https://liro.dev/components/usage-meter) |
 
 ### Essential UI
 
@@ -60,14 +60,16 @@ This repository contains 15 free Liro components. Each one is a single file you 
 If your project already uses [shadcn/ui](https://ui.shadcn.com), add any component by URL:
 
 ```bash
-npx shadcn@latest add https://raw.githubusercontent.com/Liropro/liro-free-ui/main/r/ai-chat.json
+npx shadcn@latest add https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/ai-chat.json
 ```
 
-Swap `ai-chat` for any file name in the tables above (`button`, `data-table`, `chart`, `file-upload` and so on). The CLI installs the npm packages, adds the success, warning and info colours and the animations to your global CSS, and copies the file into `components/layro/` along with any Liro components it uses. That folder keeps them apart from your shadcn/ui `components/ui/button.tsx`, so nothing gets overwritten.
+Swap `ai-chat` for any file name in the tables above (`button`, `data-table`, `chart`, `file-upload` and so on). The CLI installs the npm packages, adds the success, warning and info colours and the animations to your global CSS, and copies the file into `components/liro/` along with any Liro components it uses. That folder keeps them apart from your shadcn/ui `components/ui/button.tsx`, so nothing gets overwritten.
+
+Installed a component before the rename? It lives in `components/layro/` and keeps working; new installs go to `components/liro/`.
 
 ### Or copy the files
 
-Each component is a single self-contained `.tsx` file. Copy the ones you want into one folder in your project (for example `components/layro/`). Chat Message, Prompt Input, Streaming Response, Message Actions, Data Table, Dialog and Auth Forms import `./button`, so copy `button.tsx` next to them. AI Chat is built from the other AI components, so copy it together with `button.tsx`, `chat-message.tsx`, `streaming-response.tsx`, `thinking-state.tsx`, `message-actions.tsx` and `prompt-input.tsx`.
+Each component is a single self-contained `.tsx` file. Copy the ones you want into one folder in your project (for example `components/liro/`). Chat Message, Prompt Input, Streaming Response, Message Actions, Data Table, Dialog and Auth Forms import `./button`, so copy `button.tsx` next to them. AI Chat is built from the other AI components, so copy it together with `button.tsx`, `chat-message.tsx`, `streaming-response.tsx`, `thinking-state.tsx`, `message-actions.tsx` and `prompt-input.tsx`.
 
 #### 1. Install the dependencies
 
@@ -93,11 +95,11 @@ A few need one more package:
 
 The components use the standard shadcn/ui colour variables (`background`, `card`, `foreground`, `muted`, `primary`, `border`, `ring`, `destructive`, `chart-1` to `chart-5`), so an existing shadcn/ui theme already covers most of them.
 
-Copy [`styles/layro-free.css`](styles/layro-free.css) into your project and import it after Tailwind. It adds the success, warning and info colours, two shadows, and the animations for dialogs, menus and the AI components:
+Copy [`styles/liro-free.css`](styles/liro-free.css) into your project and import it after Tailwind. It adds the success, warning and info colours, two shadows, and the animations for dialogs, menus and the AI components:
 
 ```css
 @import "tailwindcss";
-@import "./styles/layro-free.css";
+@import "./styles/liro-free.css";
 ```
 
 Light and dark mode follow the `.dark` class, the same as shadcn/ui.
@@ -107,7 +109,7 @@ Light and dark mode follow the `.dark` class, the same as shadcn/ui.
 ```tsx
 "use client";
 
-import { AIChat } from "@/components/layro/ai-chat";
+import { AIChat } from "@/components/liro/ai-chat";
 
 export default function Page() {
   return (
