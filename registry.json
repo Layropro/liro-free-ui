@@ -1,28 +1,30 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "layro-free",
-  "homepage": "https://layropro.com",
+  "name": "liro-free",
+  "homepage": "https://liro.dev",
   "items": [
     {
       "name": "theme",
       "type": "registry:style",
-      "title": "Layro Free theme",
-      "description": "Success, warning and info colours, two shadows, and the enter/exit and AI animations the components use. Works on top of any shadcn/ui theme.",
+      "title": "Liro Free theme",
+      "description": "Success, warning and info colours, soft red and amber tints, two shadows, and the enter/exit and AI animations the components use. Works on top of any shadcn/ui theme.",
       "cssVars": {
         "theme": {
           "shadow-float": "0 1px 2px oklch(0 0 0 / 0.06), 0 8px 24px oklch(0 0 0 / 0.1)",
           "shadow-overlay": "0 2px 6px oklch(0 0 0 / 0.08), 0 24px 64px oklch(0 0 0 / 0.18)",
           "ease-out-soft": "cubic-bezier(0.22, 1, 0.36, 1)",
-          "animate-fade-in": "layro-fade-in 180ms var(--ease-out-soft)",
-          "animate-fade-out": "layro-fade-out 120ms ease-in",
-          "animate-pop-in": "layro-pop-in 160ms var(--ease-out-soft)",
-          "animate-pop-out": "layro-pop-out 110ms ease-in",
-          "animate-dialog-in": "layro-dialog-in 220ms var(--ease-out-soft)",
-          "animate-dialog-out": "layro-dialog-out 140ms ease-in",
-          "animate-shimmer": "layro-shimmer 2.2s linear infinite",
-          "animate-caret": "layro-caret 1.05s steps(1, end) infinite",
-          "animate-word-in": "layro-word-in 380ms var(--ease-out-soft) both",
-          "animate-dot": "layro-dot 1.25s ease-in-out infinite"
+          "animate-fade-in": "liro-fade-in 180ms var(--ease-out-soft)",
+          "animate-fade-out": "liro-fade-out 120ms ease-in",
+          "animate-pop-in": "liro-pop-in 160ms var(--ease-out-soft)",
+          "animate-pop-out": "liro-pop-out 110ms ease-in",
+          "animate-dialog-in": "liro-dialog-in 220ms var(--ease-out-soft)",
+          "animate-dialog-out": "liro-dialog-out 140ms ease-in",
+          "animate-shimmer": "liro-shimmer 2.2s linear infinite",
+          "animate-caret": "liro-caret 1.05s steps(1, end) infinite",
+          "animate-word-in": "liro-word-in 380ms var(--ease-out-soft) both",
+          "animate-dot": "liro-dot 1.25s ease-in-out infinite",
+          "color-destructive-soft": "var(--destructive-soft)",
+          "color-warning-soft": "var(--warning-soft)"
         },
         "light": {
           "success": "oklch(0.508 0.118 165.612)",
@@ -31,7 +33,9 @@
           "warning-fill": "oklch(0.769 0.188 70.08)",
           "warning-foreground": "oklch(0.205 0 0)",
           "info": "oklch(0.546 0.245 262.881)",
-          "info-foreground": "oklch(0.985 0 0)"
+          "info-foreground": "oklch(0.985 0 0)",
+          "destructive-soft": "color-mix(in oklab, var(--destructive) 10%, var(--card))",
+          "warning-soft": "color-mix(in oklab, var(--warning) 12%, var(--card))"
         },
         "dark": {
           "success": "oklch(0.765 0.177 163.223)",
@@ -40,45 +44,47 @@
           "warning-fill": "oklch(0.769 0.188 70.08)",
           "warning-foreground": "oklch(0.205 0 0)",
           "info": "oklch(0.707 0.165 254.624)",
-          "info-foreground": "oklch(0.205 0 0)"
+          "info-foreground": "oklch(0.205 0 0)",
+          "destructive-soft": "color-mix(in oklab, var(--destructive) 16%, var(--card))",
+          "warning-soft": "color-mix(in oklab, var(--warning) 14%, var(--card))"
         }
       },
       "css": {
-        "@keyframes layro-fade-in": {
+        "@keyframes liro-fade-in": {
           "from": {
             "opacity": "0"
           }
         },
-        "@keyframes layro-fade-out": {
+        "@keyframes liro-fade-out": {
           "to": {
             "opacity": "0"
           }
         },
-        "@keyframes layro-pop-in": {
+        "@keyframes liro-pop-in": {
           "from": {
             "opacity": "0",
             "transform": "scale(0.96) translateY(var(--pop-y, -4px))"
           }
         },
-        "@keyframes layro-pop-out": {
+        "@keyframes liro-pop-out": {
           "to": {
             "opacity": "0",
             "transform": "scale(0.97)"
           }
         },
-        "@keyframes layro-dialog-in": {
+        "@keyframes liro-dialog-in": {
           "from": {
             "opacity": "0",
             "transform": "translateY(8px) scale(0.97)"
           }
         },
-        "@keyframes layro-dialog-out": {
+        "@keyframes liro-dialog-out": {
           "to": {
             "opacity": "0",
             "transform": "translateY(4px) scale(0.98)"
           }
         },
-        "@keyframes layro-shimmer": {
+        "@keyframes liro-shimmer": {
           "from": {
             "background-position": "200% 0"
           },
@@ -86,18 +92,18 @@
             "background-position": "-200% 0"
           }
         },
-        "@keyframes layro-caret": {
+        "@keyframes liro-caret": {
           "50%": {
             "opacity": "0"
           }
         },
-        "@keyframes layro-word-in": {
+        "@keyframes liro-word-in": {
           "from": {
             "opacity": "0",
             "filter": "blur(3px)"
           }
         },
-        "@keyframes layro-dot": {
+        "@keyframes liro-dot": {
           "0%, 60%, 100%": {
             "transform": "translateY(0)",
             "opacity": "0.35"
@@ -107,7 +113,8 @@
             "opacity": "1"
           }
         }
-      }
+      },
+      "registryDependencies": []
     },
     {
       "name": "button",
@@ -119,13 +126,13 @@
         "lucide-react@^1"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json"
       ],
       "files": [
         {
           "path": "components/button.tsx",
           "type": "registry:ui",
-          "target": "components/layro/button.tsx"
+          "target": "components/liro/button.tsx"
         }
       ]
     },
@@ -142,19 +149,19 @@
         "tailwind-merge@^3"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json",
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/button.json",
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/chat-message.json",
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/message-actions.json",
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/prompt-input.json",
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/streaming-response.json",
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/thinking-state.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json",
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/button.json",
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/chat-message.json",
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/message-actions.json",
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/prompt-input.json",
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/streaming-response.json",
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/thinking-state.json"
       ],
       "files": [
         {
           "path": "components/ai-chat.tsx",
           "type": "registry:ui",
-          "target": "components/layro/ai-chat.tsx"
+          "target": "components/liro/ai-chat.tsx"
         }
       ]
     },
@@ -170,14 +177,14 @@
         "tailwind-merge@^3"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json",
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/button.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json",
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/button.json"
       ],
       "files": [
         {
           "path": "components/chat-message.tsx",
           "type": "registry:ui",
-          "target": "components/layro/chat-message.tsx"
+          "target": "components/liro/chat-message.tsx"
         }
       ]
     },
@@ -193,14 +200,14 @@
         "tailwind-merge@^3"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json",
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/button.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json",
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/button.json"
       ],
       "files": [
         {
           "path": "components/streaming-response.tsx",
           "type": "registry:ui",
-          "target": "components/layro/streaming-response.tsx"
+          "target": "components/liro/streaming-response.tsx"
         }
       ]
     },
@@ -216,13 +223,13 @@
         "tailwind-merge@^3"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json"
       ],
       "files": [
         {
           "path": "components/thinking-state.tsx",
           "type": "registry:ui",
-          "target": "components/layro/thinking-state.tsx"
+          "target": "components/liro/thinking-state.tsx"
         }
       ]
     },
@@ -238,14 +245,14 @@
         "tailwind-merge@^3"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json",
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/button.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json",
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/button.json"
       ],
       "files": [
         {
           "path": "components/message-actions.tsx",
           "type": "registry:ui",
-          "target": "components/layro/message-actions.tsx"
+          "target": "components/liro/message-actions.tsx"
         }
       ]
     },
@@ -261,14 +268,35 @@
         "tailwind-merge@^3"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json",
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/button.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json",
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/button.json"
       ],
       "files": [
         {
           "path": "components/prompt-input.tsx",
           "type": "registry:ui",
-          "target": "components/layro/prompt-input.tsx"
+          "target": "components/liro/prompt-input.tsx"
+        }
+      ]
+    },
+    {
+      "name": "code-block",
+      "type": "registry:ui",
+      "title": "Code Block",
+      "description": "Highlighted code with a file header, copy, tabs, and long blocks that fold.",
+      "dependencies": [
+        "clsx@^2",
+        "lucide-react@^1",
+        "tailwind-merge@^3"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json"
+      ],
+      "files": [
+        {
+          "path": "components/code-block.tsx",
+          "type": "registry:ui",
+          "target": "components/liro/code-block.tsx"
         }
       ]
     },
@@ -284,14 +312,14 @@
         "tailwind-merge@^3"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json",
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/button.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json",
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/button.json"
       ],
       "files": [
         {
           "path": "components/data-table.tsx",
           "type": "registry:ui",
-          "target": "components/layro/data-table.tsx"
+          "target": "components/liro/data-table.tsx"
         }
       ]
     },
@@ -307,21 +335,21 @@
         "tailwind-merge@^3"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json"
       ],
       "files": [
         {
           "path": "components/chart.tsx",
           "type": "registry:ui",
-          "target": "components/layro/chart.tsx"
+          "target": "components/liro/chart.tsx"
         }
       ]
     },
     {
-      "name": "members-table",
+      "name": "usage-meter",
       "type": "registry:ui",
-      "title": "Members Table",
-      "description": "Team members with roles, filters, bulk actions and a preview of what they change.",
+      "title": "Usage Meter",
+      "description": "Usage projected from today's run rate, with the day you cross and what it costs.",
       "dependencies": [
         "clsx@^2",
         "framer-motion@^13",
@@ -329,33 +357,13 @@
         "tailwind-merge@^3"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json"
       ],
       "files": [
         {
-          "path": "components/members-table.tsx",
+          "path": "components/usage-meter.tsx",
           "type": "registry:ui",
-          "target": "components/layro/members-table.tsx"
-        }
-      ]
-    },
-    {
-      "name": "plan-picker",
-      "type": "registry:ui",
-      "title": "Plan Picker",
-      "description": "Change plan with the exact charge shown before you confirm.",
-      "dependencies": [
-        "framer-motion@^13",
-        "lucide-react@^1"
-      ],
-      "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json"
-      ],
-      "files": [
-        {
-          "path": "components/plan-picker.tsx",
-          "type": "registry:ui",
-          "target": "components/layro/plan-picker.tsx"
+          "target": "components/liro/usage-meter.tsx"
         }
       ]
     },
@@ -371,13 +379,13 @@
         "tailwind-merge@^3"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json"
       ],
       "files": [
         {
           "path": "components/file-upload.tsx",
           "type": "registry:ui",
-          "target": "components/layro/file-upload.tsx"
+          "target": "components/liro/file-upload.tsx"
         }
       ]
     },
@@ -394,13 +402,13 @@
         "tailwind-merge@^3"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json"
       ],
       "files": [
         {
           "path": "components/command.tsx",
           "type": "registry:ui",
-          "target": "components/layro/command.tsx"
+          "target": "components/liro/command.tsx"
         }
       ]
     },
@@ -416,14 +424,14 @@
         "tailwind-merge@^3"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json",
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/button.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json",
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/button.json"
       ],
       "files": [
         {
           "path": "components/dialog.tsx",
           "type": "registry:ui",
-          "target": "components/layro/dialog.tsx"
+          "target": "components/liro/dialog.tsx"
         }
       ]
     },
@@ -441,14 +449,14 @@
         "tailwind-merge@^3"
       ],
       "registryDependencies": [
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/theme.json",
-        "https://raw.githubusercontent.com/Uvxxsh/layro-free-ui/main/r/button.json"
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/theme.json",
+        "https://raw.githubusercontent.com/Layropro/liro-free-ui/main/r/button.json"
       ],
       "files": [
         {
           "path": "components/auth.tsx",
           "type": "registry:ui",
-          "target": "components/layro/auth.tsx"
+          "target": "components/liro/auth.tsx"
         }
       ]
     }

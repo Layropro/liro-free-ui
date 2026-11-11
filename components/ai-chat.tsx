@@ -181,7 +181,7 @@ function Tooltip({
    a narrow side panel as on a phone.
 
    It arrives in sequence — mark, greeting, the rest — so the eye lands on the
-   greeting first and the questions second. The buttons are Layro's Button.
+   greeting first and the questions second. The buttons are Liro's Button.
    ========================================================================== */
 
 export interface ChatCapability {
@@ -473,10 +473,10 @@ const ChatEmptyState = React.forwardRef<HTMLDivElement, ChatEmptyStateProps>(
    AI Chat
 
    A whole chat window: greeting, thread, streaming answers, and the box to
-   type in. It is the seven smaller Layro chat components working together.
+   type in. It is the seven smaller Liro chat components working together.
 
      <AIChat
-       assistant={{ name: "Layro Assistant" }}
+       assistant={{ name: "Liro Assistant" }}
        welcome={{ title: "How can I help?", starters: ["Which invoices are overdue?"] }}
        onSend={async function* ({ text, messages, signal }) {
          const res = await fetch("/api/chat", { method: "POST", body: JSON.stringify({ messages }), signal });

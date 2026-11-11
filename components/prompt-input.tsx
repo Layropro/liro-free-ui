@@ -44,7 +44,7 @@ function cn(...inputs: ClassValue[]) {
 
    On its own it is one row. Give it `tools` or `header` and it becomes the
    two-row box that Prompt Composer is built from. Send, Stop and the tool
-   buttons are Layro's Button, so they follow your theme and sizes.
+   buttons are Liro's Button, so they follow your theme and sizes.
    ========================================================================== */
 
 export type PromptStatus = "idle" | "submitting" | "streaming";

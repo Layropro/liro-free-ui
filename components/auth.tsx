@@ -118,7 +118,7 @@ interface FieldContextValue {
 const FieldContext = React.createContext<FieldContextValue | null>(null);
 
 /**
- * The props a control inside a Field should carry. Every Layro control calls
+ * The props a control inside a Field should carry. Every Liro control calls
  * this; call it too if you put your own control in a Field.
  */
 function useFieldProps<

@@ -35,7 +35,7 @@ function cn(...inputs: ClassValue[]) {
 /* ==========================================================================
    Charts
 
-   Recharts underneath; the Layro rules on top, which are the rules that make
+   Recharts underneath; the Liro rules on top, which are the rules that make
    a chart readable rather than decorative:
 
      · colour follows the series, in a fixed order (--chart-1 … --chart-5),

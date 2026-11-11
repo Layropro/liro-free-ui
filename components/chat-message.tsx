@@ -46,7 +46,7 @@ function cn(...inputs: ClassValue[]) {
 
         <ChatMessage
           role="assistant"
-          name="Layro Assistant"
+          name="Liro Assistant"
           sources={sources}
         >
           <StreamingResponse text={answer} />
